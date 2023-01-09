@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig.json to read more about this file */
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node", 
+    "strict": true, 
+    "jsx": "preserve", 
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "lib": ["esnext", "dom"],
+    "types": ["node", "vite/client", "element-plus/global"],
+    "baseUrl": "./", 
+    "paths": {
+      "/@/*": ["./src/*"],
+      "@/*": ["./src/*"]
+    },
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true 
+  },
+  "include":["src/**/*", "./*", "public/js", "types"],
+}

@@ -1,0 +1,32 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Dependency directories (remove the comment below to include it)
+# vendor/
+
+# 忽略后端文件上传
+.idea
+config
+log
+*.ini
+
+# 忽略前端上传内容
+.vscode
+node_modules
+.DS_Store
+dist
+dist-ssr
+*.local
+.env
+.env.development
+.env.production
