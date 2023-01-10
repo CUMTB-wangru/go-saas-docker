@@ -332,6 +332,7 @@ services:
       - /Users/user/docker/data:/data
       - /Users/user/redis-6.2.6/redis.conf:/etc/redis/redis.conf
   tracer_containers:
+    # 相对当前 docker-compose.yml 文件所在目录，基于名称为 Dockerfile 的文件构建镜像
     build: .
     restart: "always"
     # command: sh -c  "./wait-for-it.sh mysql8019:3306 -- ./tracer ./config/config.ini"  # shell脚本方式启动
